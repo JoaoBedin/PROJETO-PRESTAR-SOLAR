@@ -1,7 +1,7 @@
 
 *{
   box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
      font-weight: 500;
@@ -29,11 +29,11 @@
         
     }
 
-.black-logo{
+.blue-logo{
       display: block;
        position: fixed;
-       top: -40px;
-height: 200px;
+       top: -5px;
+height: 120px;
  left: 0; 
  margin-left: 150px;
  cursor: pointer;
@@ -60,7 +60,8 @@ height: 200px;
     margin-left: auto;
 margin-top: 25px;
 font-size: 25px;
-font-weight: 600;
+
+
 color: #444444;
 cursor: pointer;
 
@@ -81,22 +82,22 @@ list-style-type: none;
 
 .link-p a:hover {
   opacity: 0.7;
-  color: rgb(0, 165, 108);
+  color: rgb(22, 69, 126);
 }
 
 .button-orcamento {
 
 
-background-color: rgb(76, 192, 152);
+background-color: rgb(22, 69, 126);
 margin-bottom: 15px;
-border:none;
+
 border-radius: 10px;
 
 font-size: 25px;
- color: #313131;
+ color: #ffffff;
   cursor: pointer;
- height: 50px;
- width: 150px;
+ height: 60px;
+ width: 170px;
  margin-left: 50px;
  margin-right: 190px;
  margin-top: 40px;
@@ -117,13 +118,29 @@ font-size: 25px;
 /** Inicio **/
 .image-background {
     position: relative;
-    background-image: url("./assets/PC2png.png");
+    background-image: url("./assets/Prancheta\ 1\ cópia\ 6.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
+    display: flex;
+    align-items: top;
+   
+    
 }
+
+.image-background > * {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 2000px;
+    padding: 20px 20px 20px 30px; /* → espaçamento maior à esquerda */
+    text-align: left;
+  
+}
+
+
 
 .image-background::before {
     content: "";
@@ -132,22 +149,72 @@ font-size: 25px;
     left: 0;
     width: 100%; 
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* ← transparência mantida */
+    background-color: rgba(0, 0, 0, 0.2); /* ← transparência mantida */
     z-index: 1;
 }
 
-.image-background > * {
-    position: relative;
-    z-index: 2;
-}
+
+
+
 /** Inicio **/
 
 
+.text-init{
+
+margin-top: 220px;
+margin-left: 300px;
+}
+
+
+h1{
+  color: rgb(228, 224, 224);
+  font-size: 60px;
+  font-weight: 700;
+  height: 235px;
+width: 700px;
+line-height: 65px;
+}
+
+.p-main {
+  font-weight: 400;
+font-size: 18px;
+color: rgb(255, 255, 255);
+width: 680px;
+}
+
+
+.img-raio{
+  width: 120px;
+height: auto;
+gap: 0;
+
+
+}
 
 
 
 
 
+.img-selo{
+ 
+  width: 150px;
+height: auto;
+gap: 0;
+}
+.garantia-selos{
+
+ display: flex;
+  flex-direction: row; /* imagem em cima, texto embaixo */
+  align-items: center; /* ou start para alinhar à esquerda */
+  text-align: start;
+margin-top: 150px;
+
+}
+
+.p-garantia{
+font-size: 18px;
+  font-weight: 700;
+}
 
 /** ABOUT US **/
 
