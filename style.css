@@ -4,7 +4,7 @@
     font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
-     font-weight: 500;
+  font-weight: 400;
 }
 
  
@@ -83,7 +83,7 @@ list-style-type: none;
 }
 
 .link-p a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
   color: rgb(22, 69, 126);
 }
 
@@ -111,7 +111,7 @@ font-size: 25px;
 .button-orcamento:active{
     transform: scale(1.05);
     opacity: 0.8;
-    background-color: #14457e; 
+    background-color: rgb(22, 69, 126); 
  
 }
 
@@ -125,35 +125,39 @@ font-size: 25px;
 
 
 /** Inicio **/
+
+
+
 .image-background {
     position: relative;
     background-image: url("./assets/Prancheta\ 1\ cópia\ 6.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
-    align-items: top;
+    background-position: center top;
+    background-size: cover; 
    
-    
+  border-radius: 40px;
+       display: flex;
+       color: #ffffff;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+  
 }
-
 .image-background > * {
     position: relative;
     z-index: 2;
-    color: white;
+     background-repeat: no-repeat;
+   color: #ffffff;
     max-width: 2000px;
     padding: 20px 20px 20px 30px; /* → espaçamento maior à esquerda */
     text-align: left;
   
 }
 
-
-
 .image-background::before {
     content: "";
     position: absolute;
+    border-radius: 40px;
     top: 0; 
     left: 0;
     width: 100%; 
@@ -162,32 +166,45 @@ font-size: 25px;
     z-index: 1;
 }
 
-.text-init{
 
-margin-top: 220px;
-margin-left: 300px;
+
+
+.img-mulher-prestar{  
+   position: absolute;
+right: 0;
+margin-right: 5%;
+border-radius: 60px;
+height: 60%;}
+
+
+
+.text-init{
+ margin-top: 5%;
+margin-left: 15%;
+
 }
 
 
 .title-init{
   color: rgb(228, 224, 224);
-  font-size: 60px;
+  font-size: 3.5vw;
   font-weight: 700;
-  height: 235px;
-width: 700px;
-line-height: 65px;
-}
+  line-height: 1.2;
+width: 50%;
+} 
 
 .p-main {
+  
   font-weight: 400;
-font-size: 18px;
+font-size: 20px;
 color: rgb(255, 255, 255);
-width: 680px;
+width:50%;
+margin-top: 5%;
 }
 
 
 .img-raio{
-  width: 120px;
+  width: 8%;
 height: auto;
 gap: 0;
 
@@ -195,14 +212,11 @@ gap: 0;
 }
 
 
-
-
-
 .img-selo{
  
-  width: 150px;
+  width: 10%;
 height: auto;
-gap: 0;
+
 }
 .garantia-selos{
 
@@ -210,18 +224,68 @@ gap: 0;
   flex-direction: row; 
   align-items: center;
   text-align: start;
-margin-top: 120px;
+margin-top: 8rem;
+
 
 }
+.p-garantia strong {
+  font-weight: 600;
+  font-size: 22px;
 
-.p-garantia{
-font-size: 18px;
-  font-weight: 700;
 }
+.p-garantia {
+font-size: 22px;
+ 
+
+   
+   
+   
+}
+
+.element-story-about-prestar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 6rem; 
+    position: absolute;
+    bottom: -90px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    z-index: 5; 
+}
+
+.element-story-about-prestar div {
+    text-align: center;
+}
+
+.element-story-about-prestar strong {
+    font-size: 3rem;
+    color:#16457e; 
+    font-weight: 600;
+}
+
+.element-story-about-prestar p {
+ font-weight: 500;
+    margin: 0;
+   font-size: 20px;
+    color: #070707;
+}
+ 
+.element-story-about-prestar b {
+  font-weight: bold;
+}
+
 
 
 /** Inicio-END**/
-
+.sd {
+  padding: 200px 300px;
+}
 
 
 /** Project **/
@@ -243,7 +307,7 @@ align-items: center;
   color: #ffffff;
   text-align: center;
   margin: 0;
-  margin-top:80px;
+  margin-top:4%;
 }
 
 .blue-bar{
@@ -288,7 +352,7 @@ margin-right: 20px;
 .element-project-button button:active {
   transform: scale(1.05);
     opacity: 0.8;
-    background-color: #14457e; 
+    background-color:rgb(22, 69, 126); 
   font-weight: 700;
 }
 
