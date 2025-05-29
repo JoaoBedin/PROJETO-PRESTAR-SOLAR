@@ -20,7 +20,7 @@
     
   
         height: 115px; 
-        background-color: white; 
+        background-color: rgb(240, 240, 240); 
         position: fixed;
         top: 0; 
         left: 0; 
@@ -92,7 +92,7 @@ list-style-type: none;
 
 background-color: rgb(22, 69, 126);
 margin-bottom: 15px;
-
+border: none;
 border-radius: 10px;
 font-weight: 500;
 font-size: 25px;
@@ -280,12 +280,120 @@ font-size: 22px;
   font-weight: bold;
 }
 
+/** Section-to-convence-abaixo **/
+
+.element-to-convence {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 8%;
+row-gap: 1rem;
+}
+
+.element-to-convence h2 {
+color: rgb(22, 69, 126); 
+font-size: 30px;
+font-weight: 500;
+}
+
+.element-to-convence h1 {
+font-size: 40px;
+font-weight: 600;
+}
+.element-to-convence strong {
+  font-weight: 800;
+}
+
+.element-to-convence a {
+font-weight: 500;
+padding: 16px 36px;
+font-size: 20px;
+border-radius: 20px;
+ background: linear-gradient(to right, #008000, #008080);
+margin-top: 1rem;
+border-radius: 10px;
+ color: #ffff;
+  cursor: pointer;
+   text-decoration: none;
+}
+
+.element-to-convence a:hover {
+transform: scale(1.1);
+opacity: 0.7;
+}
+
+.init-green-bar{
+background: linear-gradient(to right, #008000, #008080);
+  padding: 30px 20px; 
+ height: 15rem;
+
+  margin: 150px auto 50px auto; 
+  text-align: center;
+
+}
+
+.init-green-bar h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  margin-top:4%;
+}
+
+.element-part-services h2{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.element-part-services div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+   padding: 60px 20px; 
+   width: 450px;
+   row-gap: 20px;
+   color: #ffffff;
+   background: linear-gradient(to right, #008000, #008080);
+}
+.element-part-services div:hover {
+   background: linear-gradient(to right, #ffff);
+  color: #070707;
+}
+
+
+.element-part-services article{
+display: flex;
+align-items: center;
+justify-content: center;
+column-gap: 5rem;
+margin-top: 5%;
+}
+
+
+
+.element-part-services h1 {
+  margin-top:5%;
+   font-size: 25px;
+   font-weight: 600;
+}
+
+
+.element-part-services p{
+  
+font-weight: 500;
+}
+
 
 
 /** Inicio-END**/
-.sd {
-  padding: 200px 300px;
-}
+
 
 
 /** Project **/
