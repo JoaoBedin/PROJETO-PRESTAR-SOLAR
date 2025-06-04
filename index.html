@@ -20,8 +20,9 @@
 <header>
     <link rel="shortcut icon" type="imagex/png" href="./assets/logo-navegador.ico">
     <div class="white-bar">
-        <div class="link-all">
+        
            <a href="#inicio"> <img src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" class="blue-logo"/></a>
+            <div class="link-all">
             <div class="link-p">
                 <nav class="navlist">
                     <ul class="list-nav">
@@ -32,11 +33,9 @@
                     </ul>
                 </nav>
             </div>
-            <button class="button-orcamento">Orçamento</button>
-            <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><img class="whatsapp-image" src="./assets/whatsapp.png" alt="whatsapp-image" /></a>
-        </div>
-
+            <a href="#orcamento" class="a-orcamento">Orçamento</a>
     </div>
+      <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><img class="whatsapp-image" src="./assets/whatsapp.png" alt="whatsapp-image" /></a>
 </header>
 
 <main class="all-content-init">
@@ -214,7 +213,42 @@ viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill="#000">
 </section>
 
 
+
+<br>
+<br>
+<br>
+<div id="orcamento" class="change-line"></div>
+
+
+<section  class="element-orcament">
+
+<form  class="form-orcament" onsubmit="alert('Orçamento enviado com sucesso! Em breve entraremos em contato.');">
+<h1> PEÇA SEU ORÇAMENTO </h1>
+<p class="sub-text-orcament">Preencha com seus dados e entraremos em contato com uma proposta personalizada!</p>
+<input placeholder="  Seu nome" required>
+<input placeholder=" Seu telefone" type="tel" required>
+<textarea placeholder=" Observações"></textarea>
+
+
+<p id="file-name">*Última fatura de energia*</p>
+<input class="file-input" id="file" type="file" hidden>
+<label for="file" class="custom-file-label">Escolher arquivo</label>
+
+<button type="submit">Enviar</button>
+
+
+
+</form>
+
+</section>
+
+
+
+
+
 </main>
+
+
 
 <br>
 <br>
@@ -226,7 +260,7 @@ viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill="#000">
 <footer  class="element-footer">
 
 <div class="img-p-elements-footer">
-<img class="element-logo-footer" src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-prestar">
+<a href="#inicio"><img class="element-logo-footer" src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-prestar"></a>
 <p>Atendemos os estados do sul do Brasil, oferecendo soluções em energia solar com qualidade e um atendimento personalizado, focado nas necessidades específicas de cada cliente e unidade consumidora.</p>
 <div class="img-social-media">
 <a href="https://www.facebook.com/solarprestar" target="_blank"><img src="./assets/icons8-facebook-48.png" alt="facebook-logo"></a>
@@ -266,3 +300,11 @@ viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill="#000">
 
 </body>
 </html>
+
+
+<script>
+  document.getElementById('file').addEventListener('change', function() {
+    const fileName = this.files[0]?.name || 'Nenhum arquivo selecionado';
+    document.getElementById('file-name').innerText = fileName;
+  });
+</script>
