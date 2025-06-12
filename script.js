@@ -26,6 +26,26 @@ itens.forEach( (itens) => myObserver.observe(itens))
 
 /* SCRIPT PARA SELEÇÃO DAS IMAGENS */
 
+const zoom = document.getElementById('zoom');
+const zoomImg = document.getElementById('zoom-img');
+
+document.querySelectorAll('.project-img').forEach(img => {
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', () => {
+    zoomImg.src = img.src;
+    zoom.style.visibility = 'visible';
+  });
+});
+
+function Esconderdisplay(){
+  
+  zoom.style.visibility = 'hidden';
+
+}
+
+
+
+
 const PngResidencial = document.querySelector('.button-residencial');
 const PngRural = document.querySelector('.button-rural');
 const PngUsina = document.querySelector('.button-usinas');
@@ -43,21 +63,7 @@ PngRural.addEventListener('click', () => FiltrarProjetos('rural'));
 PngUsina.addEventListener('click', () => FiltrarProjetos('usinas'));
 
 
-  const zoom = document.getElementById('zoom');
-const zoomImg = document.getElementById('zoom-img');
-
-document.querySelectorAll('.project-img').forEach(img => {
-  img.style.cursor = 'pointer';
-  img.addEventListener('click', () => {
-    zoomImg.src = img.src;
-    zoom.style.display = 'flex';
-  });
-});
-
-zoom.addEventListener('click', () => {
-  zoom.style.display = 'none';
-});
-
+  
 
 
 /* SCRIPT PARA SELECIONAR OS ARQUIVOS E MOSTRAR NA TELA PARTE ORCAMENTO */
