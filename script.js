@@ -21,10 +21,15 @@ itens.forEach( (itens) => myObserver.observe(itens))
 
 
 
+function ChangeNameFile() {
+   const fileName = this.files[0]?.name || 'Nenhum arquivo selecionado';
+    document.querySelector('.custom-file-label').innerText = fileName;
+}
 
 
 
-/* SCRIPT PARA SELEÇÃO DAS IMAGENS */
+
+
 
 const zoom = document.getElementById('zoom');
 const zoomImg = document.getElementById('zoom-img');
@@ -65,14 +70,6 @@ PngUsina.addEventListener('click', () => FiltrarProjetos('usinas'));
 
   
 
-
-/* SCRIPT PARA SELECIONAR OS ARQUIVOS E MOSTRAR NA TELA PARTE ORCAMENTO */
-
-
- document.getElementById('file').addEventListener('change', function() {
-    const fileName = this.files[0]?.name || 'Nenhum arquivo selecionado';
-    document.getElementById('file-name').innerText = fileName;
-  });
 
 
 
