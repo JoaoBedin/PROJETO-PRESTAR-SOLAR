@@ -224,16 +224,20 @@ viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill="#000">
 
 <section class="hidden" class="element-orcament">
 
-<form  class="form-orcament" onsubmit="alert('Orçamento enviado com sucesso! Em breve entraremos em contato.');">
-<h1> PEÇA SEU ORÇAMENTO </h1>
+<form 
+action="https://usebasin.com/f/f7b3954b4e73" method="POST" enctype="multipart/form-data"
+
+class="form-orcament" >
+
+  <h1> PEÇA SEU ORÇAMENTO </h1>
 <p class="sub-text-orcament">Preencha com seus dados e entraremos em contato com uma proposta personalizada!</p>
-<input placeholder="Seu nome" required>
-<input placeholder="Seu telefone" type="tel" required>
-<textarea placeholder="Observações"></textarea>
+<input  type="text" name="Nome"  placeholder="Seu nome" required>
+<input   name="Telefone"  placeholder="Seu telefone" type="tel" required>
+<textarea name="Duvida" placeholder="Observações"></textarea>
 
 
 <p id="file-name">*Última fatura de energia*</p>
-<input class="file-input" id="file" type="file" hidden>
+<input class="file-input" name="file" id="file" type="file" hidden>
 <label for="file" class="custom-file-label">Escolher arquivo</label>
 
 <button type="submit">Enviar</button>
