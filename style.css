@@ -103,7 +103,7 @@ list-style-type: none;
   } /* PARA EDITAR AS BOLINHAS DA LISTA, FEITO DIRETO DA LIST, ("ul") */
 
 .link-p a {
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   color: #444444;
   transition: color 0.3s ease, opacity 0.3s ease;
@@ -778,7 +778,22 @@ margin-right: 20px;
     background-color:rgb(22, 69, 126); 
   font-weight: 700;
 }
+ 
 
+.img-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.project-img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 /** Project-END **/
 
