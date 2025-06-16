@@ -48,8 +48,7 @@ transform: translateX(0);
         left: 0; 
         width: 100%; 
         z-index: 1000;
-        
-    }
+          }
 
 .blue-logo{
       display: block;
@@ -445,8 +444,6 @@ margin-top: 6rem;
 
 }
 
-
-
 #element-part-services div svg {
  transition: transform 0.3s ease;
 }
@@ -478,8 +475,11 @@ margin-top: 6rem;
 
 
 #element-part-services p{
-  
+  text-align: flex-start;
 font-weight: 400;
+font-size: 17px;
+max-width: 400px;
+width: 100%;
 }
 /** Section-part-services- **/
 
@@ -557,22 +557,7 @@ width: 100%;
   
 }
 
-#element-part-investment div svg {
-  
-  animation: float 1.5s ease-in-out infinite;
-}
 
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 
 
 
@@ -838,7 +823,8 @@ margin-bottom: 5rem;
 .text-about-us p {
 margin-top: 2rem;
   font-size:18px;
- width: 600px;
+ width: 100%;
+ max-width: 700px;
 }
 
 .div-text-pilares-about-us {

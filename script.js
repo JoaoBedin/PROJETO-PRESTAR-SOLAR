@@ -21,13 +21,13 @@ itens.forEach( (itens) => myObserver.observe(itens))
 
 
 
-function ChangeNameFile() {
-   const fileName = this.files[0]?.name || 'Nenhum arquivo selecionado';
-    document.querySelector('.custom-file-label').innerText = fileName;
+
+
+
+function ChangeNameFile(event) {
+  const fileName = event.target.files[0]?.name || 'Nenhum arquivo selecionado';
+  document.querySelector('.custom-file-label').innerText = fileName;
 }
-
-
-
 
 
 
@@ -69,7 +69,6 @@ PngUsina.addEventListener('click', () => FiltrarProjetos('usinas'));
 
 
   
-
 
 
 
