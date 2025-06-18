@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Início - Prestar Solar</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="shortcut icon" href="./assets/favicon.ico" >
@@ -12,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+ 
 </head>
 
 <body>
@@ -25,41 +26,85 @@
         
            <a href="#inicio"> <img src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" class="blue-logo"/></a>
             <div class="link-all">
-            <div class="link-p">
-                <nav class="navlist">
+            <div class="link-p-desktop">
+                <nav class="navlist-desktop">
                     <ul class="list-nav">
+                     
                         <li><a href="index.html">Início</a></li>
-                       <li><a href="./about-us.html">Sobre nós</a></li> 
+                       <li><a href="./about-us.html">Sobre</a></li> 
+                         <li><a href="project.html">Projetos</a></li>
+                        <li><a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a></li>   
+                    </ul>
+                   <a href="#orcamento" class="a-orcamento">Orçamento</a>
+                  </nav>
+
+
+            </div>
+  <div class="mobile-menu" id="mobileMenu">
+        <button class="close" id="closeButton">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-links-mobile">
+                  <li><a href="index.html">Início</a></li>
+                       <li><a href="./about-us.html">Sobre</a></li> 
                          <li><a href="project.html">Projetos</a></li>
                         <li><a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <a href="#orcamento" class="a-orcamento">Orçamento</a>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburgerButton">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+
+
+
     </div>
       <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><img class="whatsapp-image" src="./assets/whatsapp.png" alt="whatsapp-image" /></a>
-</header>
+</div>
+    </header>
 
 <main class="all-content-init">
     
     <section class="hidden" id="inicio">
        <div class="image-background">
          
-        <img src="./assets/BANNER1Prancheta-1.png" class="img-mulher-prestar">
+     
 <div class="text-init">
-    <div class="container-init">
-      
-<h1 class="title-init">Reduza sua conta de energia em até 95% com energia solar!</h1>                 
 
+    <div class="container-init">
+        
+
+               
+<br>
+<div class="img-text">
+  <div class="h1-p-init">
+  <h1 class="title-init">Reduza sua conta de energia em até 95% com energia solar!</h1>  
 <p class="p-main">Economia e Sustentabilidade; com a energia solar você economiza mais e contribui com o meio ambiente.</p>
+ <a href="./index.html#orcamento" class="a-orcamento-init">Solite seu Orçamento! </a>
+</div>
+ <div >
+
+
+
+
+</div>
+
+<img src="./assets/BANNER1Prancheta-1.png" class="img-mulher-prestar">   
+</div>
+
+
+
 
 <div class="garantia-selos">
 <img  class= "img-selo"src="./assets/verificad-log.png" alt="selo-de-garantia">
-
 <p class="p-garantia"> <strong>Garantia</strong> de Qualidade</p>
 <img  class= "img-raio" src="./assets/Raio-png.png" alt="raio-de-garantia">
 <p class="p-garantia"> <strong>25 anos</strong> de Garantia com Eficiência</p>
+
 </div>
+</div>
+
 
 </div>
 
@@ -273,11 +318,8 @@ class="form-orcament" >
 <a href="https://www.facebook.com/solarprestar" target="_blank"><img src="./assets/icons8-facebook-48.png" alt="facebook-logo"></a>
 <a href="https://www.instagram.com/solarprestar/" target="_blank"><img src="./assets/icons8-instagram-48.png" alt="instagram-logo"></a>
 </div>
-<div class="line-footer"></div>
 
-<div class="footer-copy">
-  © 2025 Prestar Solar. Todos os direitos reservados.
-</div>
+
 
 </div>
 
@@ -300,8 +342,13 @@ class="form-orcament" >
 
 
 
+
+
 </footer>
 
+<div class="footer-copy">
+  © 2025 Prestar Solar. Todos os direitos reservados.
+</div>
 
 
 

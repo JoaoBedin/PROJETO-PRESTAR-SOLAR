@@ -4,8 +4,9 @@
     font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
+  
   font-weight: 400;
-
+max-width: 100%;
 }
 
 
@@ -40,24 +41,29 @@ transform: translateX(0);
 .white-bar {
     
   
-        height: 115px; 
+        height:115px; 
         background-color: rgb(255, 255, 255); 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        position: fixed;
-        top: 0; 
-        left: 0; 
-        width: 100%; 
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+position: fixed;
+width: 100%;
+top: 0;
         z-index: 1000;
+display: flex;
+align-items: center;
+
+        
+
           }
 
 .blue-logo{
-      display: block;
-       position: fixed;
-       top: -5px;
+height: 100%;
 height: 120px;
- left: 0; 
- margin-left: 150px;
+
+ margin-left: 120px;
  cursor: pointer;
+ 
 }
 
 
@@ -78,30 +84,33 @@ height: 120px;
 }
 
 .link-all{
-  display: flex;
- justify-content: flex-end;
-  
+display: flex;
+justify-content: flex-end;
+width: 100%;
+
 }
 
-.link-p{ 
- 
-    
-margin-top: 35px;
+.link-p-desktop{ 
 font-size: 25px;
-
-margin-right: 50px;
-color: #444444;
-cursor: pointer;
-
+ 
 }
 
 .list-nav{ 
   display: flex;
-  gap:50px;
+   gap: 70px;
 list-style-type: none;
+ 
   } /* PARA EDITAR AS BOLINHAS DA LISTA, FEITO DIRETO DA LIST, ("ul") */
 
-.link-p a {
+.navlist-desktop {
+  display: flex;
+  align-items: baseline;
+gap: 70px;
+ 
+}
+
+.list-nav a {
+  display: flex;
   font-weight: 600;
   cursor: pointer;
   color: #444444;
@@ -110,15 +119,13 @@ list-style-type: none;
      
 }
 
-.link-p a:hover {
-  opacity: 0.8;
+.list-nav a:hover {
+  
   color: rgb(22, 69, 126);
 }
 
 .a-orcamento {
-display: flex;
-align-items: center;
-justify-content: center;
+
 text-decoration: none;  
 background-color: rgb(22, 69, 126);
 border: none;
@@ -127,16 +134,18 @@ font-weight: 600;
 font-size: 25px;
  color: #ffffff;
   cursor: pointer;
-font-size: 25px;
-margin-top: 35px;
-margin-right: 10rem;
-width: 100%;
-max-width:200px;
+
+margin-right: 9.7rem;
 height: 50px;
+width: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .a-orcamento:hover{
   opacity: 0.8;
+  
 }
 .a-orcamento:active{
     transform: scale(1.05);
@@ -144,6 +153,216 @@ height: 50px;
    
  
 }
+
+.mobile-menu{ 
+ display: none;
+ display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+  z-index: 5;
+   
+}
+
+.nav-links-mobile{
+ 
+ display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.2rem;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+   
+}
+
+.nav-links-mobile li {
+border-bottom: 1px solid #787272;
+padding-bottom: 1.2rem;
+
+}
+
+.nav-links-mobile a{  font-weight: 600;
+  cursor: pointer;
+  color: #fdfdfd;
+  transition: color 0.3s ease, opacity 0.3s ease;
+   text-decoration: none;  /* PARA REMOVER A LINHA DO LINK ("a")*/ }
+
+
+.hamburger,
+.close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  display: none;
+}
+
+.close {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  align-self: end;
+  color: #ffffff;
+}
+
+
+
+
+
+@media(max-width: 768px) {
+
+
+.white-bar{
+  height: 70px;
+  
+}
+
+.navlist-desktop {
+  display: none;
+}
+
+.hamburger {
+ display: block;
+}
+
+.blue-logo{
+  height: 60%;
+  width: 65%;
+  display: flex;
+  align-content: flex-start;
+  margin-left: -10px;
+  
+}
+
+.whatsapp-image{
+  height: 50px;
+position: fixed;
+}
+.element-story-about-prestar{
+
+  display: flex;
+  flex-direction: column;
+
+}
+.garantia-selos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#element-to-convence{ 
+  text-align: center;
+}
+ .img-mulher-prestar {
+  display: none;
+  
+  }
+
+.h1-p-init h1{
+font-size: 30px;
+text-align: left;
+}
+
+
+#element-part-services h2 {
+ 
+  text-align: center;
+}
+
+#element-part-services article {
+  display: flex;
+  flex-direction: column;
+row-gap: 1.2rem;
+width: 80%;
+height: 70%;
+
+
+margin: 0 auto;
+
+}
+
+#element-part-services h1 { 
+text-align:center ;
+
+}
+#element-part-services div{
+  display: flex;
+  align-items: center;
+justify-content: center;
+
+}
+
+#element-part-investment article{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.element-footer{
+  display: flex;
+
+width: 100%;
+align-items: center;
+justify-content: center;
+text-align: center;
+  flex-direction: column;
+
+}
+.element-footer div {
+  margin-bottom: -4rem;
+  
+}
+.img-p-elements-footer  {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.element-logo-footer{
+  height: 65%;
+  width: 90%;
+}
+
+.img-social-media{
+  display: flex;
+  
+  justify-content: center;
+ 
+}
+
+
+.links-element-footer,
+.contact-element-footer{
+  
+  text-align: center;
+   display: flex;
+  align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.contact-element-footer{
+    margin-top: -2rem;
+  
+}
+
+
+
+
+}
+
+
+
 
 /* HEADER */
 
@@ -159,25 +378,24 @@ height: 50px;
 
 
 .image-background {
-    position: relative;
+   
     background-image: url("./assets/Prancheta\ 1\ cópia\ 6.png");
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover; 
   border-radius: 40px;
        display: flex;
        color: #ffffff;
     align-items: center;
     padding: 2rem;
-min-height: 1000px;
-  width:100%;
+min-height: 110vh
+  ;
 }
 .image-background > * {
     position: relative;
     z-index: 2;
      background-repeat: no-repeat;
    color: #ffffff;
-    max-width: 1200px;
+    max-width: 100vw;
     padding: 20px 20px 20px 30px; /* → espaçamento maior à esquerda */
     text-align: left;
   
@@ -198,15 +416,36 @@ min-height: 1000px;
 
 
 
+
 .img-mulher-prestar{
-  position: absolute;  
- right: 0;
- margin-right: 5rem;
+margin-left: 250px;
 border-radius: 60px;
 max-height: 550px;
-height: 100%;}
+height: 100%;
+
+}
 
 
+
+.img-text{
+  display: flex;
+  align-items: start;
+}
+
+.h1-p-init{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.title-init{
+  color: rgb(228, 224, 224);
+  font-size: 60px;
+  font-weight: 800;
+max-width: 700px;
+width: 100%;
+
+} 
 
 .text-init{
  margin-top: 5%;
@@ -215,50 +454,62 @@ margin-left: 15%;
 }
 
 
-.title-init{
-  color: rgb(228, 224, 224);
-  font-size: 60px;
-  font-weight: 800;
-  
-max-width: 700px;
-width: 100%;
-} 
+
 
 .p-main {
-  
+  margin-top: 3rem;
   font-weight: 400;
 font-size: 20px;
 color: rgb(255, 255, 255);
 max-width: 600px;
-width:50%;
-margin-top: 5%;
+width: 100%;
+}
+
+.a-orcamento-init{
+  
+
+text-decoration: none;  
+color: #00a665;
+background-color: #ffff;
+border: none;
+border-radius: 10px;
+font-weight: 500;
+font-size: 20px;
+
+  cursor: pointer;
+  height: 50px;
+width: 300px;
+justify-content: center;
+align-items: center;
+text-align: center;
+display: flex;
+margin-top: 20px;
 }
 
 
+
 .img-raio{
-  width: 8%;
+  max-width: 80px;
+  width: 100%;
+  
 height: auto;
 gap: 0;
-
 
 }
 
 
 .img-selo{
- 
-  width: 10%;
+ max-width: 100px;
+  width: 100%;
 height: auto;
 
 }
 .garantia-selos{
+display: flex;
+margin-top: -1rem;
+align-items: center;
 
- display: flex;
-  flex-direction: row; 
-  align-items: center;
-  text-align: start;
-margin-top: 8rem;
-
-
+width: 80%;
 }
 .p-garantia strong {
   font-weight: 600;
@@ -287,7 +538,7 @@ font-size: 22px;
     bottom: -90px; 
     left: 50%;
     transform: translateX(-50%); 
-    
+   
     z-index: 5; 
 }
 
@@ -419,6 +670,7 @@ align-items: center;
   border-radius: 15px;
    padding: 60px 20px; 
    width: 450px;
+   
    row-gap: 20px;
    color: #ffffff;
    background: linear-gradient(to right, #008000, #008080);
@@ -999,23 +1251,6 @@ opacity: 0.7;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** FOOTER**/
 
 .element-footer{
@@ -1023,7 +1258,6 @@ opacity: 0.7;
  display: flex;
 justify-content: center;
   padding: 2rem;
-  max-width: 1500px;
   margin: 0 auto;
   align-items: center;
     align-items: baseline;
@@ -1033,7 +1267,8 @@ justify-content: center;
 
 .img-p-elements-footer{
  display: flex;
- align-items: flex-start;
+align-items: left;
+justify-content: center;
 flex-direction: column;
 gap: 15px;
 
@@ -1092,11 +1327,13 @@ font-size: 18px;
 
 
 
-
-
 .footer-copy {
-  font-size: 16px;
 
+  font-size: 16px;
+border-top: 1px solid #cfcfcf;
+text-align: center;
+height: 1px;
+margin-top: 3rem;
 }
 
 .line-footer{
@@ -1108,3 +1345,8 @@ font-size: 18px;
     
 }
 /** FOOTER **/
+
+
+
+
+
