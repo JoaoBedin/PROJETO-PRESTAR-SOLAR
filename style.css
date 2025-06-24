@@ -6,7 +6,7 @@
     padding: 0;
   
   font-weight: 400;
-max-width: 100%;
+
 }
 
 
@@ -217,157 +217,7 @@ padding-bottom: 1.2rem;
 
 
 
-@media(max-width: 768px) {
-
-
-.white-bar{
-  height: 70px;
-  
-}
-
-.navlist-desktop {
-  display: none;
-}
-
-.hamburger {
- display: block;
-}
-
-.blue-logo{
-  height: 60%;
-  width: 65%;
-  display: flex;
-  align-content: flex-start;
-  margin-left: -10px;
-  
-}
-
-.whatsapp-image{
-  height: 50px;
-position: fixed;
-}
-.element-story-about-prestar{
-
-  display: flex;
-  flex-direction: column;
-
-}
-.garantia-selos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#element-to-convence{ 
-  text-align: center;
-}
- .img-mulher-prestar {
-  display: none;
-  
-  }
-
-.h1-p-init h1{
-font-size: 30px;
-text-align: left;
-}
-
-
-#element-part-services h2 {
- 
-  text-align: center;
-}
-
-#element-part-services article {
-  display: flex;
-  flex-direction: column;
-row-gap: 1.2rem;
-width: 80%;
-height: 70%;
-
-
-margin: 0 auto;
-
-}
-
-#element-part-services h1 { 
-text-align:center ;
-
-}
-#element-part-services div{
-  display: flex;
-  align-items: center;
-justify-content: center;
-
-}
-
-#element-part-investment article{
-  display: flex;
-  flex-direction: column;
-
-}
-
-
-.element-footer{
-  display: flex;
-
-width: 100%;
-align-items: center;
-justify-content: center;
-text-align: center;
-  flex-direction: column;
-
-}
-.element-footer div {
-  margin-bottom: -4rem;
-  
-}
-.img-p-elements-footer  {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-}
-.element-logo-footer{
-  height: 65%;
-  width: 90%;
-}
-
-.img-social-media{
-  display: flex;
-  
-  justify-content: center;
- 
-}
-
-
-.links-element-footer,
-.contact-element-footer{
-  
-  text-align: center;
-   display: flex;
-  align-items: center;
-justify-content: center;
-width: 100%;
-}
-
-.contact-element-footer{
-    margin-top: -2rem;
-  
-}
-
-
-
-
-}
-
-
-
-
 /* HEADER */
-
-
-
 
 
 
@@ -469,8 +319,8 @@ width: 100%;
   
 
 text-decoration: none;  
-color: #00a665;
-background-color: #ffff;
+color:#ffff; 
+background-color: rgb(22, 69, 126);
 border: none;
 border-radius: 10px;
 font-weight: 500;
@@ -504,12 +354,16 @@ gap: 0;
 height: auto;
 
 }
-.garantia-selos{
+
+
+.garantia-selos {
+  display: flex;
+  flex-direction: row;
+}
+.garantia-selos div{
 display: flex;
-margin-top: -1rem;
 align-items: center;
 
-width: 80%;
 }
 .p-garantia strong {
   font-weight: 600;
@@ -555,7 +409,7 @@ font-size: 22px;
 .element-story-about-prestar p {
  font-weight: 500;
     margin: 0;
-   font-size: 20px;
+   font-size: 1.2rem;
     color: #070707;
 }
  
@@ -576,12 +430,12 @@ row-gap: 1rem;
 
 #element-to-convence h2 {
 color: rgb(22, 69, 126); 
-font-size: 30px;
+font-size: 1.8rem;
 font-weight: 500;
 }
 
 #element-to-convence h1 {
-font-size: 40px;
+font-size: 2.3rem;
 font-weight: 500;
 }
 #element-to-convence strong {
@@ -591,7 +445,7 @@ font-weight: 500;
 #element-to-convence a {
 font-weight: 500;
 padding: 16px 36px;
-font-size: 20px;
+font-size: 1.2rem;
 border-radius: 20px;
  background: linear-gradient(to right, #008000, #008080);
 margin-top: 1rem;
@@ -641,19 +495,16 @@ align-items: center;
 }
 
 .init-green-bar h1 {
-  font-size: 50px;
+   font-size: 3.7rem;
   font-weight: 700;
   color: #ffffff;
-  display:flex ;
-align-items: center;
- justify-content: center;
+text-align: center;
 
 }
 
 #element-part-services h2{
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
+ text-align: center;
+  font-size: 1.8rem;
   font-weight: 500;
   margin-top: 5rem;
 }
@@ -669,8 +520,10 @@ align-items: center;
   justify-content: center;
   border-radius: 15px;
    padding: 60px 20px; 
-   width: 450px;
-   
+   width: 100%;
+   max-width: 450px;
+   height: 100%;
+   max-height: 500px;
    row-gap: 20px;
    color: #ffffff;
    background: linear-gradient(to right, #008000, #008080);
@@ -720,7 +573,7 @@ margin-top: 6rem;
 
 #element-part-services h1 {
   margin-top:5%;
-   font-size: 25px;
+   font-size: 1.6rem;
    font-weight: 500;
  
 }
@@ -729,7 +582,7 @@ margin-top: 6rem;
 #element-part-services p{
   text-align: flex-start;
 font-weight: 400;
-font-size: 17px;
+font-size: 1.1rem;
 max-width: 400px;
 width: 100%;
 }
@@ -756,7 +609,7 @@ font-weight: 700;
 
 #element-part-investment h1 {
  margin-top: 3rem;
-  font-size: 40px;
+   font-size: 2.5rem;
  
 }
 
@@ -791,8 +644,7 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
   border-radius: 15px;
-  max-height: 450px;
-  height: 100%;
+
   max-width: 450px;
 width: 100%;
    padding:60px 20px;
@@ -845,7 +697,7 @@ border-radius: 40px;
 
 .form-orcament h1 {
  color: #ffffff; ;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
@@ -861,7 +713,7 @@ border: none;
   outline: #008080;
     width: 100%;
   max-width: 400px;
-  font-size: 17px;
+  font-size: 1.1rem;
   color: #363636;
    font-weight: 500;
 }
@@ -870,7 +722,7 @@ border: none;
 
 #file-name {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .custom-file-label {
@@ -898,7 +750,7 @@ border: none;
 outline: #008080;
   width: 100%;
   max-width: 400px;
-  font-size: 17px;
+  font-size: 1.1rem;
   color: #131111;
   height: 8vh;
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -916,7 +768,7 @@ color: #000000;
   max-width: 300px;
    border-radius: 15px;
    border: none;
-   font-size: 22px;
+   font-size: 1.4rem;
 font-weight: 600;
 cursor: pointer;
 transition: all 0.3s ease;
@@ -1347,6 +1199,322 @@ margin-top: 3rem;
 /** FOOTER **/
 
 
+/*MOBILE SCREEN*/
+
+@media(max-width: 768px) {
+
+
+
+  
+
+.white-bar{
+  height: 70px;
+  
+}
+
+.navlist-desktop {
+  display: none;
+}
+
+.hamburger {
+ display: block;
+}
+
+.blue-logo{
+  height: 60%;
+  width: 65%;
+  display: flex;
+  align-content: flex-start;
+  margin-left: -10px;
+  
+}
+
+.whatsapp-image{
+  height: 50px;
+position: fixed;
+right: 0;
+bottom: 0;
+}
+
+.image-background{
+  padding: 0;
+
+}
+.image-background > *{
+  padding: 0;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+ 
+}
+
+
+
+.text-init{
+text-align: center;
+margin:0
+}
+.text-init p  {
+  font-size: 1rem;
+}
+.text-init strong{
+  font-size: 1rem;
+}
+
+.a-orcamento-init{
+margin: 0 auto;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.garantia-selos{
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+}
+
+#element-to-convence{ 
+  text-align: center;
+}
+ .img-mulher-prestar {
+  display: none;
+  
+  }
+
+.h1-p-init h1{
+font-size: 30px;
+text-align: center;
+
+}
+
+
+
+
+
+.element-story-about-prestar{
+  position: relative;
+  gap: 3rem;
+  width: 60%;
+margin-top: -200px;
+margin-bottom: -50px;
+ display: flex;
+  flex-direction: column;
+
+}
+.element-story-about-prestar p{
+  font-size: 1rem;
+}
+.element-story-about-prestar strong{
+  font-size: 2rem;
+}
+
+
+
+#element-to-convence h2{
+font-size: 1.2rem;
+}
+
+#element-to-convence h1{
+  font-size: 1.6rem;
+}
+
+#element-to-convence a {
+  font-size: 1rem;
+}
+
+
+
+
+.init-green-bar{
+  height:150px;
+}
+
+.init-green-bar h1{
+  font-size: 2.5rem;
+}
+
+
+
+
+#element-part-services  h2  {
+
+
+font-size: 1.2rem ;
+margin-bottom: 3rem;
+}
+
+#element-part-services h1 {
+
+  text-align: center;
+ font-size: 1.2rem;
+}
+
+#element-part-services article {
+  display: flex;
+  flex-direction: column;
+row-gap: 1.2rem;
+width: 80%;
+
+text-align: center;
+margin: 0 auto;
+
+}
+
+#element-part-services div p {
+  text-align: center;
+ font-size: 0.9rem;
+}
+
+
+#element-part-services div{
+  display: flex;
+  align-items: center;
+justify-content: center;
+ 
+}
+
+svg{
+  height:80px;
+}
+
+#element-part-investment article{
+  display: flex;
+  flex-direction: column;
+
+}
+
+#element-part-investment h1{
+  font-size: 2rem ;
+}
+
+#element-part-investment div h2 {
+  font-size: 20px;
+}
+#element-part-investment div p {
+  font-size: 14px;
+}
+
+#element-part-investment div{
+  width: 70% !important;
+}
+
+.form-orcament {
+  width: 95%;
+  text-align: center;
+}
+.form-orcament h1{
+  font-size: 2rem;
+}
+
+.form-orcament p {
+  font-size: 0.95rem;
+}
+
+.form-orcament input,textarea::placeholder{
+  font-size: 0.95rem;
+}
+
+
+.form-orcament input{
+  font-size: 1rem;
+}
+.form-orcament textarea{
+  font-size: 1rem;
+}
+
+#file-name{
+  font-size: 1rem;
+}
+
+.form-orcament button{
+font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.element-footer{
+  display: flex;
+
+width: 100%;
+align-items: center;
+justify-content: center;
+text-align: center;
+  flex-direction: column;
+
+}
+.element-footer div {
+  margin-bottom: -4rem;
+  
+}
+.img-p-elements-footer  {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.element-logo-footer{
+  height: 65%;
+  width: 90%;
+}
+
+.img-social-media{
+  display: flex;
+  
+  justify-content: center;
+ 
+}
+
+
+.links-element-footer,
+.contact-element-footer{
+  
+  text-align: center;
+   display: flex;
+  align-items: center;
+justify-content: center;
+width: 100%;
+
+}
+
+.links-element-footer h1{
+  font-size: 1.2rem;
+}
+
+.links-element-footer a{
+  font-size: 1rem;
+}
+.contact-element-footer{
+    margin-top: -2rem;
+  
+}
+
+.contact-element-footer h1{
+  font-size: 1.2rem;
+}
+.contact-element-footer a{
+  font-size: 1rem;
+}
+
+
+
+
+
+}
+
+
+/*MOBILE-SCREEN-END/*
 
 
 
