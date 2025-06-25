@@ -31,6 +31,38 @@ function ChangeNameFile(event) {
 
 
 
+  const hamburgerButton = document.querySelector("#hamburgerButton")
+const closeButton = document.querySelector("#closeButton")
+const mobileMenu = document.querySelector(".mobile-menu")
+
+
+hamburgerButton.addEventListener("click" , function(){
+mobileMenu.classList.add("flex");
+
+})
+
+closeButton.addEventListener("click" , function(){
+mobileMenu.classList.remove("flex");
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const zoom = document.getElementById('zoom');
 const zoomImg = document.getElementById('zoom-img');
 
@@ -51,6 +83,11 @@ function Esconderdisplay(){
 
 
 
+
+
+
+
+
 const PngResidencial = document.querySelector('.button-residencial');
 const PngRural = document.querySelector('.button-rural');
 const PngUsina = document.querySelector('.button-usinas');
@@ -66,9 +103,5 @@ function FiltrarProjetos(tipo) {
 PngResidencial.addEventListener('click', () => FiltrarProjetos('residencial'));
 PngRural.addEventListener('click', () => FiltrarProjetos('rural'));
 PngUsina.addEventListener('click', () => FiltrarProjetos('usinas'));
-
-
-  
-
 
 

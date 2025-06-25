@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos-Prestar Solar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="shortcut icon" href="./assets/favicon.ico" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
 
-<header>
+   <header>
     <link rel="shortcut icon" type="imagex/png" href="./assets/logo-navegador.ico">
     <div class="white-bar">
         
-           <a href="#inicio"> <img src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" class="blue-logo"/></a>
+          <a href="./index.html"> <img src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" class="blue-logo"/></a>
             <div class="link-all">
-            <div class="link-p">
-                <nav class="navlist">
+            <div class="link-p-desktop">
+                <nav class="navlist-desktop">
                     <ul class="list-nav">
                      
                         <li><a href="index.html">Início</a></li>
@@ -27,19 +32,41 @@
                          <li><a href="project.html">Projetos</a></li>
                         <li><a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a></li>   
                     </ul>
-                   <a href="./index.html#orcamento" class="a-orcamento">Orçamento</a>
+                  <a href="./index.html#orcamento" class="a-orcamento">Orçamento</a>
                   </nav>
-        
+
+
             </div>
-       
+  <div class="mobile-menu" id="mobileMenu">
+        <button class="close" id="closeButton">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-links-mobile">
+                  <li><a href="index.html">Início</a></li>
+                       <li><a href="./about-us.html">Sobre</a></li> 
+                         <li><a href="project.html">Projetos</a></li>
+                        <li><a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a></li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburgerButton">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+
+
+
     </div>
       <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><img class="whatsapp-image" src="./assets/whatsapp.png" alt="whatsapp-image" /></a>
-</header>
+</div>
+    </header>
+
+
 
 
 
 <main >
-  <section class="hidden">
+  <section >
     <div class="blue-bar">
       <h1 class="h1-project">PROJETOS</h1>
       </div>
@@ -75,10 +102,13 @@
     </section>
 </main>
 </section>
+
 <br>
 <br>
 <br>
 <div class="last-change-line"></div>
+
+
 
 <footer  class="element-footer">
 
@@ -90,20 +120,18 @@
 <a href="https://www.instagram.com/solarprestar/" target="_blank"><img src="./assets/icons8-instagram-48.png" alt="instagram-logo"></a>
 </div>
 
-<div class="line-footer"></div>
 
-<div class="footer-copy">
-  © 2025 Prestar Solar. Todos os direitos reservados.
-</div>
+
 </div>
 
 
 <div class="links-element-footer">
 <h1>Links Úteis</h1>
 <a href="index.html">Início</a>
-<a href="./index.html">Sobre nós</a>
+<a href="./about-us.html">Sobre nós</a>
 <a href="project.html">Projetos</a>
 <a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a>
+<a href="./about-us.html#local">Localização</a>
 </div>
 
 <div class="contact-element-footer">
@@ -112,20 +140,19 @@
  <a href="mailto:prestarsolar@gmail.com">prestarsolar@gmail.com</a>
  <p>Telefone para contato:</p>
  <a href="tel:4699115033">46 99115033</a>
- 
- 
-</div>
+ </div>
+
+
+
 
 
 </footer>
 
-
-
-
-
-<div   id="zoom" style="visibility: hidden; position:fixed; top:0; left:0; width:100%; height:100%; background:#000000cc; display:flex; align-items:center; justify-content:center; z-index:9999;" onclick="Esconderdisplay() "  >
-  <img id="zoom-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
+<div class="footer-copy">
+  © 2025 Prestar Solar. Todos os direitos reservados.
 </div>
+
+
 
 </body>
 <script src="script.js"></script>

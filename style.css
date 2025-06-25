@@ -28,7 +28,7 @@ transform: translateX(0);
 }
 
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* HEADER */
 
@@ -52,7 +52,7 @@ top: 0;
         z-index: 1000;
 display: flex;
 align-items: center;
-
+text-align: end;
         
 
           }
@@ -91,7 +91,7 @@ width: 100%;
 }
 
 .link-p-desktop{ 
-font-size: 25px;
+font-size: 1.4rem;
  
 }
 
@@ -113,7 +113,7 @@ gap: 70px;
   display: flex;
   font-weight: 600;
   cursor: pointer;
-  color: #444444;
+  color: #646464;
   transition: color 0.3s ease, opacity 0.3s ease;
    text-decoration: none;  /* PARA REMOVER A LINHA DO LINK ("a")*/
      
@@ -154,39 +154,33 @@ justify-content: center;
  
 }
 
-.mobile-menu{ 
- display: none;
+.mobile-menu {
  display: none;
   position: fixed;
   top: 0;
   right: 0;
-  width: 60%;
+  width: 50%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.88);
   flex-direction: column;
   align-items: center;
   font-size: 1.8rem;
   z-index: 5;
-   
 }
 
-.nav-links-mobile{
- 
+.nav-links-mobile {
  display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 1.2rem;
+  gap: 1rem;
   width: 80%;
   list-style: none;
   padding: 0;
-   
 }
 
 .nav-links-mobile li {
-border-bottom: 1px solid #787272;
-padding-bottom: 1.2rem;
-
-}
+  border-bottom: 1px solid #787272;
+  padding-bottom: 1rem;}
 
 .nav-links-mobile a{  font-weight: 600;
   cursor: pointer;
@@ -213,16 +207,20 @@ padding-bottom: 1.2rem;
   color: #ffffff;
 }
 
+.flex{
+  display: flex;
+}
 
-
-
+.display-none{
+  display: none;
+}
 
 /* HEADER */
 
 
 
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /** Inicio **/
 
 
@@ -416,7 +414,7 @@ font-size: 22px;
 .element-story-about-prestar b {
   font-weight: bold;
 }
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /** Section-to-convence-abaixo **/
 
 #element-to-convence {
@@ -464,6 +462,7 @@ border-radius: 10px;
 opacity: 0.7;
 }
 /** Section-to-convence-**/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 .change-line{
 margin: 0 auto;
   width: 50vw;
@@ -479,7 +478,7 @@ background-color: #cfcfcf;
   background-color: #cfcfcf;
 }
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /** Section-part-services-abaixo **/
 .init-green-bar{
 background: linear-gradient(to right, #008000, #008080);
@@ -588,7 +587,7 @@ width: 100%;
 }
 /** Section-part-services- **/
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /** Section-part-investment-abaixo **/
 #element-part-investment{
 
@@ -675,7 +674,7 @@ width: 100%;
 
 
 /** Section-part-investment- **/
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /** Section-element-orcament **/
 
 
@@ -792,12 +791,12 @@ max-width: 400px;
 
 }
 /** Section-element-orcament **/
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /** Inicio-END**/
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /** Project **/
 
@@ -889,7 +888,7 @@ margin-right: 20px;
 
 /** Project-END **/
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /** ABOUT-US **/
 .h1-about-us{
@@ -1099,7 +1098,7 @@ opacity: 0.7;
 /** ABOUT-US END **/
 
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -1198,22 +1197,27 @@ margin-top: 3rem;
 }
 /** FOOTER **/
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*MOBILE SCREEN*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media(max-width: 1024px) {
 
-@media(max-width: 768px) {
 
 
-
-  
+  /*INIT-MOBILE*/
 
 .white-bar{
-  height: 70px;
+  height: 100px;
   
 }
 
 .navlist-desktop {
   display: none;
+  
+}
+
+.mobile-menu{
+  font-size: 1.5rem;
 }
 
 .hamburger {
@@ -1222,7 +1226,7 @@ margin-top: 3rem;
 
 .blue-logo{
   height: 60%;
-  width: 65%;
+  width: 75%;
   display: flex;
   align-content: flex-start;
   margin-left: -10px;
@@ -1230,31 +1234,44 @@ margin-top: 3rem;
 }
 
 .whatsapp-image{
-  height: 50px;
+  height: 60px;
 position: fixed;
 right: 0;
 bottom: 0;
 }
 
 .image-background{
-  padding: 0;
+  position: relative;
+  justify-content: center;
 
+  padding: 0;
+margin: 0;
 }
 .image-background > *{
   padding: 0;
     display: flex;
   align-items: center;
   justify-content: center;
- 
+  
+ margin: 0;
  
 }
 
 
 
 .text-init{
-text-align: center;
-margin:0
+ 
+margin:0;
+padding: 0;
 }
+
+.p-main{display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
 .text-init p  {
   font-size: 1rem;
 }
@@ -1272,6 +1289,7 @@ margin: 0 auto;
 .garantia-selos{
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
  
   justify-content: center;
 }
@@ -1298,7 +1316,7 @@ text-align: center;
   position: relative;
   gap: 3rem;
   width: 60%;
-margin-top: -200px;
+margin-top: -170px;
 margin-bottom: -50px;
  display: flex;
   flex-direction: column;
@@ -1338,10 +1356,7 @@ font-size: 1.2rem;
 
 
 
-
 #element-part-services  h2  {
-
-
 font-size: 1.2rem ;
 margin-bottom: 3rem;
 }
@@ -1376,7 +1391,15 @@ justify-content: center;
  
 }
 
-svg{
+#element-part-services div:hover {
+   transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    
+  
+
+}
+
+svg {
   height:80px;
 }
 
@@ -1434,35 +1457,172 @@ font-size: 1.2rem;
 }
 
 
+/*INIT-MOBILE*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*ABOUT-US-MOBILE*/
+
+
+.blue-bar{
+  height: 60%;
+  text-align: center;
+  margin-top: 100px}
+
+.h1-about-us{
+  font-size: 2.5rem;
+}
+
+.img-man-work{
+  display: none;
+  height: 200px;
+}
+
+.text-about-us{
+  padding-right: 2rem;
+}
+
+.text-about-us h1{
+  display: flex;
+  font-size: 1.8rem;
+  
+  align-items: center;
+ 
+}
+
+.text-about-us p {
+  font-size: 1rem;
+}
+
+.div-text-pilares-about-us{
+  text-align: center;
+}
+.div-text-pilares-about-us h2{
+  font-size: 1.6rem;
+}
+
+.div-text-pilares-about-us h1 {
+font-size: 2rem;
+}
+
+.examples-pilares{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.examples-pilares div {
+  width: 80%;
+  
+}
+
+iframe{
+  align-items: center;
+  width: 80%;
+}
+
+.examples-pilares h1{
+  font-size: 1.6rem;
+}
+
+.examples-pilares svg {
+  height: 60px;
+}
+.examples-pilares p {
+  font-size: 1rem;
+}
+
+.all-the-convence-about-us{
+  text-align: center;
+width: 100%;
+}
+
+.all-the-convence-about-us a{
+  font-size: 1.1rem;
+}
+
+.element-to-convence-about-us h2{
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.element-to-convence-about-us h1{
+  font-size: 1.8rem;;
+}
+
+
+/*ABOUT-US-MOBILE*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*PROJECT-MOBILE*/
+
+
+.h1-project{
+  font-size: 2.5rem;
+}
+
+.h2-element-project{
+  font-size: 2rem;
+  text-align: center;
+  
+}
+.element-project-button{
+
+  display: flex;
+  flex-direction:column;
+ gap: 1rem;
+ text-align: center;
+ justify-content: center;
+ margin-right: -20px;
+   padding-top: 2rem;
+}
+
+.element-project-button button{
+  margin-top: 0.5rem;
+}
+
+
+.img-project{
+  
+ margin: 0 auto;
+ 
+
+  padding: 0;
+
+}
+
+.img-project img{
+  height: 50%;
+}
 
 
 
 
-
-
-
-
-
-
+/*PROJECT-MOBILE*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*FOOTER-MOBILE*/
 .element-footer{
   display: flex;
-
+flex-direction: column;
 width: 100%;
 align-items: center;
 justify-content: center;
 text-align: center;
-  flex-direction: column;
+
 
 }
 .element-footer div {
   margin-bottom: -4rem;
   
 }
+
+.element-footer p {
+  font-size: 0.9rem;
+}
+
 .img-p-elements-footer  {
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%;
+width: 70%;
 }
 .element-logo-footer{
   height: 65%;
@@ -1508,13 +1668,8 @@ width: 100%;
 }
 
 
-
-
+/*FOOTER-MOBILE*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*MOBILE-SCREEN-END*/
 
 }
-
-
-/*MOBILE-SCREEN-END/*
-
-
-

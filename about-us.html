@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Início - Prestar Solar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="shortcut icon" href="./assets/favicon.ico" >
@@ -12,19 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+ 
 </head>
 
 <body>
-   
-<header>
+   <header>
     <link rel="shortcut icon" type="imagex/png" href="./assets/logo-navegador.ico">
     <div class="white-bar">
         
-           <a href="#inicio"> <img src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" class="blue-logo"/></a>
+          <a href="./index.html"> <img src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" class="blue-logo"/></a>
             <div class="link-all">
-            <div class="link-p">
-                <nav class="navlist">
+            <div class="link-p-desktop">
+                <nav class="navlist-desktop">
                     <ul class="list-nav">
                      
                         <li><a href="index.html">Início</a></li>
@@ -32,14 +32,36 @@
                          <li><a href="project.html">Projetos</a></li>
                         <li><a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a></li>   
                     </ul>
-                   <a href="./index.html#orcamento" class="a-orcamento">Orçamento</a>
+                  <a href="./index.html#orcamento" class="a-orcamento">Orçamento</a>
                   </nav>
-        
+
+
             </div>
-       
+  <div class="mobile-menu" id="mobileMenu">
+        <button class="close" id="closeButton">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-links-mobile">
+                  <li><a href="index.html">Início</a></li>
+                       <li><a href="./about-us.html">Sobre</a></li> 
+                         <li><a href="project.html">Projetos</a></li>
+                        <li><a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a></li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburgerButton">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+
+
+
     </div>
       <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><img class="whatsapp-image" src="./assets/whatsapp.png" alt="whatsapp-image" /></a>
-</header>
+</div>
+    </header>
+
+
 
 <main>
 <section class="hidden">
@@ -49,7 +71,7 @@
 </div>
 
 <div class="itens-about-us">
-<img src="./assets/BANNER.png" alt="" style="height: 500px; border-radius: 40px; ">
+<img class="img-man-work" src="./assets/BANNER.png" alt="" style="max-height: 500px; height: 100%; border-radius: 40px; ">
 <div class="text-about-us">
 <h1> QUEM SOMOS</h1>
 <p>
@@ -106,7 +128,7 @@ Somos a Prestar Solar, uma empresa com mais de 12 anos de experiência, atuando 
 
 <div  class="local-prestar-solar" style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 5rem;">
 
-    <h1   style="margin-bottom: 2rem"> <strong   style="font-size: 35px; font-weight: 700;">LOCALIZAÇÃO</strong></h1>
+    <h1 class="h1-loc-prestar"  style="margin-bottom: 2rem"> <strong   style="font-size: 2rem; font-weight: 700;">LOCALIZAÇÃO</strong></h1>
 
  <iframe  class="iframe-localization" style="border-radius: 20px; border: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.6570170759464!2d-52.5486442237166!3d-25.979286654853208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eff9f12d38c3ad%3A0x60f9f0cd7ca7b993!2sR.%20da%20Liberdade%2C%202021%20-%20Cel.%20Vivida%2C%20PR%2C%2085550-000!5e0!3m2!1sen!2sbr!4v1749150522825!5m2!1sen!2sbr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
@@ -130,36 +152,34 @@ Somos a Prestar Solar, uma empresa com mais de 12 anos de experiência, atuando 
 
 
 
-
-<br>
 <br>
 <br>
 <div class="last-change-line"></div>
 
+
+
 <footer  class="element-footer">
 
 <div class="img-p-elements-footer">
-<a href="#inicio"><img class="element-logo-footer" src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-prestar"></a>
+<a href="./index.html"><img class="element-logo-footer" src="./assets/LOGO PRESTAR SOLAR.png" alt="logo-prestar"></a>
 <p>Atendemos os estados do sul do Brasil, oferecendo soluções em energia solar com qualidade e um atendimento personalizado, focado nas necessidades específicas de cada cliente e unidade consumidora.</p>
 <div class="img-social-media">
 <a href="https://www.facebook.com/solarprestar" target="_blank"><img src="./assets/icons8-facebook-48.png" alt="facebook-logo"></a>
 <a href="https://www.instagram.com/solarprestar/" target="_blank"><img src="./assets/icons8-instagram-48.png" alt="instagram-logo"></a>
 </div>
 
-<div class="line-footer"></div>
 
-<div class="footer-copy">
-  © 2025 Prestar Solar. Todos os direitos reservados.
-</div>
+
 </div>
 
 
 <div class="links-element-footer">
 <h1>Links Úteis</h1>
 <a href="index.html">Início</a>
-<a href="./index.html">Sobre nós</a>
+<a href="./about-us.html">Sobre nós</a>
 <a href="project.html">Projetos</a>
 <a  href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank">Contato</a>
+<a href="./about-us.html#local">Localização</a>
 </div>
 
 <div class="contact-element-footer">
@@ -168,9 +188,19 @@ Somos a Prestar Solar, uma empresa com mais de 12 anos de experiência, atuando 
  <a href="mailto:prestarsolar@gmail.com">prestarsolar@gmail.com</a>
  <p>Telefone para contato:</p>
  <a href="tel:4699115033">46 99115033</a>
- 
- 
+ </div>
+
+
+
+
+
+</footer>
+
+<div class="footer-copy">
+  © 2025 Prestar Solar. Todos os direitos reservados.
 </div>
+
+
 
 
 </footer>
