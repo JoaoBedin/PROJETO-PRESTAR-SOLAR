@@ -26,7 +26,24 @@ html{
   transition: all 0.8s;
 transform: translateX(0);
 }
+.zoom-modal {
+  visibility: hidden;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
+.zoom-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 

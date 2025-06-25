@@ -1,6 +1,26 @@
 
+const zoom = document.getElementById('zoom');
+const zoomImg = document.getElementById('zoom-img');
 
-/* .img-mulher-prestar, .element-story-about-prestar, .article-services, .article-investment, .form-orcament   */
+document.querySelectorAll('.project-img').forEach(img => {
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', () => {
+    zoomImg.src = img.src;
+    zoom.style.visibility = 'visible';
+  });
+});
+
+function Esconderdisplay(){
+  
+  zoom.style.visibility = 'hidden';
+
+}
+
+
+
+
+
+
 
 const myObserver = new IntersectionObserver( (entries) => {
 entries.forEach((entry) => {
@@ -48,37 +68,6 @@ mobileMenu.classList.remove("flex");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const zoom = document.getElementById('zoom');
-const zoomImg = document.getElementById('zoom-img');
-
-document.querySelectorAll('.project-img').forEach(img => {
-  img.style.cursor = 'pointer';
-  img.addEventListener('click', () => {
-    zoomImg.src = img.src;
-    zoom.style.visibility = 'visible';
-  });
-});
-
-function Esconderdisplay(){
-  
-  zoom.style.visibility = 'hidden';
-
-}
 
 
 
