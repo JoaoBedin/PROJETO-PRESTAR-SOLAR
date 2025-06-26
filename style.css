@@ -176,7 +176,7 @@ justify-content: center;
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 60%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.88);
   flex-direction: column;
@@ -1277,17 +1277,14 @@ margin: 0;
 
 
 .text-init{
- 
-margin:0;
-padding: 0;
-}
-
-.p-main{display: flex;
+ display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
- 
+  width: 100%;
 }
+
+
 
 .text-init p  {
   font-size: 1rem;
@@ -1332,7 +1329,7 @@ text-align: center;
 .element-story-about-prestar{
   position: relative;
   gap: 3rem;
-  width: 60%;
+  width: 40%;
 margin-top: -170px;
 margin-bottom: -50px;
  display: flex;
