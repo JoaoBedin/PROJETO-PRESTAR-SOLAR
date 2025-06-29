@@ -252,8 +252,7 @@ justify-content: center;
        color: #ffffff;
     align-items: center;
     padding: 2rem;
-min-height: 110vh
-  ;
+min-height: 110vh;
 }
 .image-background > * {
     position: relative;
@@ -1255,12 +1254,14 @@ margin-top: 3rem;
 position: fixed;
 right: 0;
 bottom: 0;
+margin: 10px;
+opacity: 0.7;
 }
 
 .image-background{
   position: relative;
   justify-content: center;
-
+height: 800px;
   padding: 0;
 margin: 0;
 }
@@ -1282,6 +1283,8 @@ margin: 0;
   align-items: center;
   text-align: center;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
@@ -1304,7 +1307,7 @@ margin: 0 auto;
   display: flex;
   flex-direction: column;
   margin-top: 40px;
- 
+  padding: 0;
   justify-content: center;
 }
 
@@ -1328,10 +1331,10 @@ text-align: center;
 
 .element-story-about-prestar{
   position: relative;
-  gap: 3rem;
-  width: 40%;
-margin-top: -170px;
-margin-bottom: -50px;
+  gap: 2rem;
+  width: 50%;
+margin-top: -200px;
+margin-bottom: -20px;
  display: flex;
   flex-direction: column;
 
